@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>API PIXEL CLASSIFICATION</title>
+</head>
+
+<body>
+  <h1>PREDICTION DE LA CLASSE D'UN PIXEL</h1>
+  <h4> Merci de renseigner les valeurs numériques entre 0 et 255 concernant le pixel dans les champs de texte suivants :</h4>
+  <div class="form">
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="pixel1" placeholder="Bande Verte" required="required" />
+        <input type="text" name="pixel2" placeholder="Bande Rouge" required="required" />
+        <input type="text" name="pixel3" placeholder="BN Infrared 1" required="required" />
+        <input type="text" name="pixel4" placeholder="BN Infrared 2" required="required" />
+        
+        <button type="submit" id="sub">PREDICTION</button>
+    </form>
+
+   <br>
+    <br>
+    
+  </div>
+  <br>
+<div id="id1">{{ prediction_text }}</div>
+</body>
+</body>
+</html>
+
+
+
+<style type="text/css">
+
+  html{
+
+    font-family: Arial, sans-serif;
+
+    background:url(535496.jpg);
+
+    background-size: cover;
+
+
+
+  }
+
+
+  .form input{
+
+
+
+    font-family: Arial, sans-serif;
+
+    font-size:12px;
+
+    background:white;
+
+    padding: 5px;
+
+    border: 1px solid #FFF;
+
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 2px #1FB6FF inset;
+
+    -webkit-transition: 0.5s;
+
+    margin:5px;
+
+  }
+
+
+
+  .form input:focus{
+
+    box-shadow: 1px 1px 2px grey inset;
+
+  }
+
+
+
+  .form{
+
+
+
+    width: -moz-min-content;
+
+    margin:auto;
+
+    border-radius: 15px;
+
+    padding:4px;
+
+    background-color: rgba(0, 0, 0, 0.41);
+
+
+
+  }
+
+#id1{
+
+
+
+
+    margin:auto;
+
+    border-radius: 15px;
+
+    padding:4px;
+
+    background-color: rgba(0, 0, 0, 0.41);
+
+
+
+  }
+
+  #container{
+
+    display:flex;
+
+  }
+
+
+
+  #row{
+
+
+
+  display: inline-block;
+
+  padding:10px;
+
+  margin-left: 45px;
+
+  margin-right: 45px;
+
+
+
+  }
+
+
+
+  p{
+
+
+
+    color:white;
+
+    cursor:default;
+
+  }
+
+
+
+input{
+
+  background-color: #6BA1CF;
+
+  border: none;
+
+  color: black;
+
+  text-decoration: none;
+
+  border-radius: 12px;
+
+  height:25px;
+
+  width:80px;
+
+  /*margin-top: 90px;
+
+  margin-left: 100px;*/
+
+  cursor:pointer;
+
+}
+
+#sub{
+
+background-color: #6BA1CF;
+
+border: none;
+
+color: white;
+
+text-decoration: none;
+
+border-radius: 12px;
+
+width: 100px;
+
+margin-top: 25px;
+
+cursor: pointer;
+
+}
+
+
+
+</style>
