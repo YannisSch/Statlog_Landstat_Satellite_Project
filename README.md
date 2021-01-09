@@ -1,4 +1,6 @@
 # Statlog_Landstat_Satellite_Project
+Lien vers le dataset : 
+https://archive.ics.uci.edu/ml/datasets/Statlog+%28Landsat+Satellite%29
 
 GIT of our Python for Data Analysis final project
 
