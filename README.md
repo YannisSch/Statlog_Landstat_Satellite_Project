@@ -47,6 +47,6 @@ Nous avons choisi de créer une API avec Flask pour ensuite l’appelé dans une
 
   Pour l'exécuter : 
 
-    Lancer le fichier python "app.py" puis se rendre à l'URL indiqué par l'invité de commande (localhost normalement) présent dans le dosssier ApiFlask/
+    Lancer le fichier python "app.py" (présent dans le dosssier ApiFlask/ ) sur Anaconda ou autre puis se rendre à l'URL indiqué par l'invité de commande (localhost normalement)
 
 Merci pour votre attention
