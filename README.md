@@ -2,7 +2,7 @@
 
 GIT of our Python for Data Analysis final project
 
-INFORMATION SUR LE DATASET : 
+- INFORMATION SUR LE DATASET : 
 
 Ces données correspondent au "Statlog (Landsat Satellite) Data Set". Les données Landsat originales pour cette base de données ont été générées à partir de données achetées à la NASA par le Centre australien pour la télédétection, et utilisé pour la recherche par le Centre de télédétection Université de Nouvelle-Galles du Sud Kensington, boîte postale 1 NSW 2033 L'Australie.
 
@@ -37,16 +37,16 @@ Les données sont données dans un ordre aléatoire et certaines lignes de donn�
 Ainsi, les quatre valeurs spectrales pour le pixel central sont données par les attributs 17, 18, 19 et 20. La classification est assocé uniquement au pixel central
 (Schéma explicatif dans notre PDF et dans notre fichier .ipynb) 
 
-Modèle choisi : 
+- Modèle choisi : 
 
 Après comparaison avec plusieurs modèles, nous avons choisi de prendre le Random Forest Classifier.
 
-API Flask :
+- API Flask :
 
 Nous avons choisi de créer une API avec Flask pour ensuite l’appelé dans une simple appli web afin de permettre à l’utilisateur de rentrer les 4 valeurs du pixel sur les 4 bandes spectrales et ainsi à partir du modèle que nous avons créé pouvoir prédire la classe du pixel ainsi que la probabilité grâce au module numpy.
 
-Pour l'exécuter : 
+  Pour l'exécuter : 
 
-Lancer le fichier python "app.py" puis se rendre à l'URL indiqué par l'invité de commande (localhost normalement) présent dans le dosssier ApiFlask/
+    Lancer le fichier python "app.py" puis se rendre à l'URL indiqué par l'invité de commande (localhost normalement) présent dans le dosssier ApiFlask/
 
 Merci pour votre attention
